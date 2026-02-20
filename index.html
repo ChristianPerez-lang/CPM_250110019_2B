@@ -4,145 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas De Frecuencia</title>
-    <style>
-    body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            font-family: 'Inter', sans-serif;
-            color: #2d3436;
-            padding: 40px 20px;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            color: #0984e3;
-            border-left: 5px solid #0984e3;
-            padding-left: 15px;
-            margin-top: 40px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin: 20px 0;
-        }
-
-        th {
-            background-color: #0984e3;
-            color: white;
-            padding: 15px;
-            text-align: left;
-        }
-
-        td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
-        }
-
-        tr:hover {
-            background-color: #f1f9ff;
-        }
-
-        .total {
-            font-weight: bold;
-            background-color: #f8f9fa;
-        }
-    </style>
+    <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
     <header>
         <h1>Tablas de Distribución de Frecuencia</h1>
     </header>
-    <h2>1. Variable Cuantitativa (Satisfacción)</h2>
-    <p>En el verificentro de Atitalaquia se realizo una encuesta a 100 personas sobre como fue la calidad en el servicio de los servidores públicos estas fueron sus respuestas:</p>
+    <h2>Cuantitativa Discreta </h2>
+    <p>El Infonavit realizo una consulta en el Fraccionamiento Los Arcos ubicado en Ajacuba Hidalgo a 100 residentes (por casa) sobre el número de hijos que tienen, comenzando desde 0 a 4 hijos. los resultados de la consulta son los siguientes:</p>
+    <h3>Interpretación de datos</h3>
+        <p>De los 100 residentes consultados 15 no tienen hijos, 28 sólo tienen un hijo, 35 tienen dos hijos, 14 tienen 3 hijos, por último 8 residentes viven con 4 hijos.</p>
+        <h3>Datos</h3>
+<p class="datos">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,  1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2, 3,3,3,3,3,3,3,3,3,3,3,3,3,3, 4,4,4,4,4,4,4,4
+</p>
+    <h2>Tabla de Distribución de Frecuencia Cuantitativa (Discreta)</h2>
     <table>
         <thead>
             <tr>
-                <th>Calificación (1-5)</th>
-                <th>Frec. Absoluta (fa)</th>
-                <th>Frec. Acumulada (Facum)</th>
-                <th>Frec. Relativa (r)</th>
+                <th>Número de hijos (Clase)</th>
+                <th>Frecuencia Absoluta (Fa)</th>
+                <th>Frecuencia Relativa (Fr)</th>
+                <th>Frecuencia Acumulada (Facum)</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>1 (Muy Insatisfecho)</td><td>8</td><td>8</td><td>8%</td></tr>
-            <tr><td>2 (Insatisfecho)</td><td>12</td><td>20</td><td>12%</td></tr>
-            <tr><td>3 (Neutral)</td><td>25</td><td>45</td><td>25%</td></tr>
-            <tr><td>4 (Satisfecho)</td><td>40</td><td>85</td><td>40%</td></tr>
-            <tr><td>5 (Muy Satisfecho)</td><td>15</td><td>100</td><td>15%</td></tr>
-            <tr class="total"><td>TOTAL</td><td>100</td><td>100</td><td>100%</td></tr>
+            <tr><td>0</td><td>15</td><td>0.15</td><td>15</td></tr>
+            <tr><td>1</td><td>28</td><td>0.28</td><td>43</td></tr>
+            <tr><td>2</td><td>35</td><td>0.35</td><td>78</td></tr>
+            <tr><td>3</td><td>14</td><td>0.14</td><td>92</td></tr>
+            <tr><td>4</td><td>8</td><td>0.08</td><td>100</td></tr>
+            
         </tbody>
-        <h3>Interpretación de datos</h3>
-        <p>De las 100 personas entrevistadas, 8 están muy insatisfechas con el servicio, 12 están insatisfechas, 25 permanecen neutrales, 40 se sienten satisfechas, finalmente 15 se sienten muy satisfechas con el servicio recibido.</p>
     </table>
+    <h3>Histograma</h3>
     <img src="./imagenes/Histograma1_trans.png" alt="" width="400">
+    <h3>Gráfico de Barras</h3>
     <img src="./imagenes/Barras1_trans.png" alt="" width="400">
+    <h3>Poligono de Frecuencia</h3>
     <img src="./imagenes/Poligono1_trans.png" alt="" width="400">
+    <h3>Ojiva</h3>
     <img src="./imagenes/Ojiva1_trans.png" alt="" width="400">
-    <img src="./imagenes/Pastel1_trans.png" alt="" width="400">
+    <h3>Diagrama de Pastel</h3>
+    <img src="./imagenes/Pie1_Trans.png" alt="" width="400">
 
-    <h2>2. Variable Cuantitativa Discreta (Hijos)</h2>
-    <p>En un fraccionamiento en Ajacuba se realizo una consulta a 100 habitantes sobre el número de hijos que tiene cada residente comenzando de 0 a 4 o más hijos los resultados de la consulta son los siguientes:</p>
+
+
+    <h2>Cuantitativa Continua</h2>
+    <p>En la refineria de Tula se realizo un estudio sobre el peso de 100 hombres trabajadores, por un protocolo de salud y bienestar, estos fueron los resultados del estudio:</p>
+    <h3>Interpretación de datos</h3>
+        <p>De los 100 empleados, 12 empleados pesan entre 60-65kg, 28 65-70kg aproximadamente, 35 rondan los 70-75kg, 18 se encuentran en 75-80kg, y por último 7 empleados pesan aproximadamente 80-85kg. </p>
+    <p class="datos">
+        60-65,60-65,60-65,60-65,60-65,60-65,60-65,60-65,60-65,60-65,60-65,60-65 , 65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70,65-70, 70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75,70-75, 75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80,75-80, 80-85,80-85,80-85,80-85,80-85,80-85,80-85
+    </p>
+    <h2>Tabla de Distribución de Frecuencia Cuantitativa (Continua)</h2>
     <table>
         <thead>
             <tr>
-                <th>N° de Hijos </th>
-                <th>Frec. Absoluta (fa)</th>
-                <th>Frec. Acumulada (Facum)</th>
-                <th>Frec. Relativa (r)</th>
+                <th>Intervalo de Peso(Clase)</th>
+                <th>Límite Inferior (Li)</th>
+                <th>Límite Superior (Ls)</th>
+                <th>Marcas de Clase (Mc)</th>
+                <th>Frecuencia Absoluta (Fa)</th>
+                <th>Frecuencia Relativa (Fr)</th>
+                <th>Frecuencia Acumulada (Facum)</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>0</td><td>22</td><td>22</td><td>0.22</td></tr>
-            <tr><td>1</td><td>38</td><td>60</td><td>0.38</td></tr>
-            <tr><td>2</td><td>25</td><td>85</td><td>0.25</td></tr>
-            <tr><td>3</td><td>10</td><td>95</td><td>0.10</td></tr>
-            <tr><td>4 o más</td><td>5</td><td>100</td><td>0.05</td></tr>
-            <tr class="total"><td>TOTAL</td><td>100</td><td>100</td><td>1.00</td></tr>
+            <tr><td>60-65</td><td>60</td><td>65</td><td>62.5</td><td>12</td><td>0.12</td><td>12</td></tr>
+            <tr><td>65-70</td><td>65</td><td>70</td><td>67.5</td><td>28</td><td>0.28</td><td>40</td></tr>
+            <tr><td>70-75</td><td>70</td><td>75</td><td>72.5</td><td>35</td><td>0.35</td><td>75</td></tr>
+            <tr><td>75-80</td><td>75</td><td>80</td><td>77.5</td><td>18</td><td>0.18</td><td>93</td></tr>
+            <tr><td>80-85</td><td>80</td><td>85</td><td>82.5</td><td>7</td><td>0.07</td><td>100</td></tr>
+            
         </tbody>
-        <h3>Interpretación de datos</h3>
-        <p>De los 100 residentes consultados 22 no tienen hijos, 38 sólo tienen un hijo, 25 tienen dos hijos, 10 tienen 3 hijos, por último 5 residentes viven con 4 o más hijos.</p>
     </table>
+    <h3>Histograma</h3>
     <img src="./imagenes/Histograma2_trans.png" alt="" width="400">
+    <h3>Gráfico de Barras</h3>
     <img src="./imagenes/Barras2_trans.png" alt="" width="400">
+    <h3>Poligono de Frecuencia</h3>
     <img src="./imagenes/Poligono2_trans.png" alt="" width="400">
+    <h3>Ojiva</h3>
     <img src="./imagenes/Ojiva2_trans.png" alt="" width="400">
-    <img src="./imagenes/Pastel2_trans.png" alt="" width="400">
+    <h3>Diagrama de Pastel</h3>
+    <img src="./imagenes/Pie2_Trans.png" alt="" width="400">
 
-    <h2>3. Variable Cuantitativa Continua (Pesos en kg)</h2>
-    <p>En la refineria de Tula se realizo un estudio sobre el peso de 100 trabajadores hombres estos fueron los resultados del estudio:</p>
+
+    <h2>Variable Cuantitativa </h2>
+    <p>En el verificentro de Atitalaquia se realizo una encuesta a 100 personas sobre como fue la calidad en el servicio de los servidores públicos estas fueron sus respuestas:</p>
+    <h3>Interpretación de datos</h3>
+    <p>De las 100 personas entrevistadas, 8 están muy insatisfechas con el servicio, 12 están insatisfechas, 25 permanecen neutrales, 40 se sienten satisfechas, finalmente 15 se sienten muy satisfechas con el servicio recibido.</p>
+    <p class="datos">
+        1,1,1,1,1,1,1,1, 2,2,2,2,2,2,2,2,2,2,2,2, 3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3, 4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4, 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+    </p>
+    <h2>Tabla de Distribución de Frecuencia (Cualitativa)</h2>
     <table>
         <thead>
             <tr>
-                <th>Intervalo de Peso</th>
-                <th>Marca de Clase (mc)</th>
-                <th>Frec. Absoluta (fa)</th>
-                <th>Frec. Acumulada (Facum)</th>
+                <th>Calificación 1-5 (Clase)</th>
+                <th>Frec. Absoluta (Fa)</th>
+                <th>Frec. Relativa (Fr)</th>
+                <th>Frec. Acumulada (Fa)</th>
             </tr>
         </thead>
         <tbody>
-            <tr><td>[60, 65)</td><td>62.5</td><td>12</td><td>12</td></tr>
-            <tr><td>[65, 70)</td><td>67.5</td><td>28</td><td>40</td></tr>
-            <tr><td>[70, 75)</td><td>72.5</td><td>35</td><td>75</td></tr>
-            <tr><td>[75, 80)</td><td>77.5</td><td>18</td><td>93</td></tr>
-            <tr><td>[80, 85]</td><td>82.5</td><td>7</td><td>100</td></tr>
-            <tr class="total"><td>TOTAL</td><td>-</td><td>100</td><td>100</td></tr>
+            <tr><td>1 (Muy Insatisfecho)</td><td>8</td><td>0.08</td><td>8</td></tr>
+            <tr><td>2 (Insatisfecho)</td><td>12</td><td>0.12</td><td>20</td></tr>
+            <tr><td>3 (Neutral)</td><td>25</td><td>0.25</td><td>45</td></tr>
+            <tr><td>4 (Satisfecho)</td><td>40</td><td>0.40</td><td>85</td></tr>
+            <tr><td>5 (Muy Satisfecho)</td><td>15</td><td>0.15</td><td>100</td></tr>
         </tbody>
-        <h3>Interpretación de datos</h3>
-        <p>Despúes de revisar los datos el estudio arrojo que 12 empleados pesan alrededor de 62.5kg, 28 67.5kg aproximadamente, 35 rondan los 72.5kg, 18 se encuentran en 77.5kg, y por último 7 empleados pesan aproximadamente 82.5kg. </p>
     </table>
+    <h3>Histograma</h3>
     <img src="./imagenes/Histograma3_trans.png" alt="" width="400">
+    <h3>Gráfico de Barras</h3>
     <img src="./imagenes/Barras3_trans.png" alt="" width="400">
+    <h3>Poligono de Frecuencia</h3>
     <img src="./imagenes/Poligono3_trans.png" alt="" width="400">
+    <h3>Ojiva</h3>
     <img src="./imagenes/Ojiva3_trans.png" alt="" width="400">
-    <img src="./imagenes/Pastel3_Trans.png" alt="" width="400">
+    <h3>Diagrama de Pastel</h3>
+    <img src="./imagenes/Pie3_Trans.png" alt="" width="400">
 </body>
 </html>
